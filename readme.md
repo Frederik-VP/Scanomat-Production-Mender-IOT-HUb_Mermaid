@@ -1,16 +1,27 @@
 
+client
+ERP
+
 
 ```mermaid
 sequenceDiagram
-    BC ->> IN folder: Sends Order
-    IN folder->> OUT folder: When processed, Dachser sent to OUT folder
-    BC -->> OUT folder: At time interval, checks OUT Folder
-    Note right of OUT folder: Time interval to be determined?
-    BC ->> OUT folder: Request Server for file
-    OUT folder ->> BC: Retrives File and parses it
-    BC ->> OUT folder: Deletes the file in OUT folder to clean up.
-    BC ->> OUT folder: Deletes the file in OUT folder to clean up.
-    BC ->> OUT folder: Deletes the file in OUT folder to clean up.
+    client ->> ERP folder: Sends Order hello to
+    
+    ERP folder->> Mender: When processed, Dachser sent to Mender
+    
+    client -->> Mender: At time ERPterval, checks Mender helloe
+    
+    Note right of Mender: Time ERPterval to be determERPed?
+    
+    client ->> Mender: Request Server for file helloe
+    
+    Mender ->> client: Retrives File and parses it helloe
+    
+    client ->> Mender: Deletes the file ERP Mender to clean  helloeup.
+    
+    client ->> Mender: Deletes the file ERP Mender to clean  helloeup.
+    
+    client ->> Mender: Deletes the file ERP Mender to clean  helloeup.
 ```
 
 
